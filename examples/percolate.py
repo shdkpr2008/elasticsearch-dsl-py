@@ -1,4 +1,4 @@
-from elasticsearch_dsl import Document, Percolator, Text, Keyword, \
+from elasticsearch7_dsl import Document, Percolator, Text, Keyword, \
     connections, Q, Search
 
 class BlogPost(Document):

@@ -1,6 +1,6 @@
 import pickle
 
-from elasticsearch_dsl import utils, serializer
+from elasticsearch7_dsl import utils, serializer
 
 from pytest import raises
 

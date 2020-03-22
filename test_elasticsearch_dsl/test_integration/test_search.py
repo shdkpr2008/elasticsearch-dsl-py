@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from elasticsearch import TransportError
+from elasticsearch7 import TransportError
 
-from elasticsearch_dsl import Search, Document, Date, Text, Keyword, MultiSearch, \
+from elasticsearch7_dsl import Search, Document, Date, Text, Keyword, MultiSearch, \
     Index, Q
-from elasticsearch_dsl.response import aggs
+from elasticsearch7_dsl.response import aggs
 
 from .test_data import FLAT_DATA
 

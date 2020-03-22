@@ -5,7 +5,7 @@ from dateutil import tz
 
 import pytest
 
-from elasticsearch_dsl import field, InnerDoc, ValidationException, Range
+from elasticsearch7_dsl import field, InnerDoc, ValidationException, Range
 
 def test_date_range_deserialization():
     data = {

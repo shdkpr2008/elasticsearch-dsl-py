@@ -13,7 +13,7 @@ f.close()
 install_requires = [
     'six',
     'python-dateutil',
-    'elasticsearch>=7.0.0,<8.0.0',
+    'elasticsearch7>=7.0.0,<8.0.0',
     # ipaddress is included in stdlib sincxe py 3.3
     'ipaddress; python_version<"3.3"'
 ]
@@ -28,7 +28,7 @@ tests_require = [
 ]
 
 setup(
-    name = "elasticsearch-dsl",
+    name = "elasticsearch7-dsl",
     description = "Python client for Elasticsearch",
     license="Apache License, Version 2.0",
     url = "https://github.com/elasticsearch/elasticsearch-dsl-py",
@@ -38,7 +38,7 @@ setup(
     author_email = "honza.kral@gmail.com",
     packages=find_packages(
         where='.',
-        exclude=('test_elasticsearch_dsl*', )
+        exclude=('test_elasticsearch7_dsl*', )
     ),
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     classifiers = [
@@ -58,7 +58,7 @@ setup(
     ],
     install_requires=install_requires,
 
-    test_suite = "test_elasticsearch_dsl.run_tests.run_all",
+    test_suite = "test_elasticsearch7_dsl.run_tests.run_all",
     tests_require=tests_require,
 
     extras_require={

@@ -2,11 +2,11 @@ from datetime import datetime
 from pytz import timezone
 from ipaddress import ip_address
 
-from elasticsearch import ConflictError, NotFoundError
+from elasticsearch7 import ConflictError, NotFoundError
 
-from elasticsearch_dsl import Document, Date, Text, Keyword, Mapping, InnerDoc, \
+from elasticsearch7_dsl import Document, Date, Text, Keyword, Mapping, InnerDoc, \
     Object, Nested, MetaField, Q, Long, Boolean, Double, Binary, Ip, analyzer
-from elasticsearch_dsl.utils import AttrList
+from elasticsearch7_dsl.utils import AttrList
 
 from pytest import raises, fixture
 

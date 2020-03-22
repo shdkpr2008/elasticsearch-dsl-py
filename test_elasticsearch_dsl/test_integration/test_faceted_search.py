@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from elasticsearch_dsl import Document, Boolean, Date, A, Keyword
-from elasticsearch_dsl.faceted_search import FacetedSearch, TermsFacet, \
+from elasticsearch7_dsl import Document, Boolean, Date, A, Keyword
+from elasticsearch7_dsl.faceted_search import FacetedSearch, TermsFacet, \
     DateHistogramFacet, RangeFacet, NestedFacet
 
 from .test_document import PullRequest

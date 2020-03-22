@@ -7,8 +7,8 @@ except ImportError:
 
 from six import iteritems, string_types
 
-from elasticsearch.helpers import scan
-from elasticsearch.exceptions import TransportError
+from elasticsearch7.helpers import scan
+from elasticsearch7.exceptions import TransportError
 
 from .query import Q, Bool
 from .aggs import A, AggBase
@@ -738,7 +738,7 @@ class Search(Request):
 
 class MultiSearch(Request):
     """
-    Combine multiple :class:`~elasticsearch_dsl.Search` objects into a single
+    Combine multiple :class:`~elasticsearch7_dsl.Search` objects into a single
     request.
     """
     def __init__(self, **kwargs):
@@ -758,7 +758,7 @@ class MultiSearch(Request):
 
     def add(self, search):
         """
-        Adds a new :class:`~elasticsearch_dsl.Search` object to the request::
+        Adds a new :class:`~elasticsearch7_dsl.Search` object to the request::
 
             ms = MultiSearch(index='my-index')
             ms = ms.add(Search(doc_type=Category).filter('term', category='python'))

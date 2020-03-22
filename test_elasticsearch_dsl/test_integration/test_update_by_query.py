@@ -1,6 +1,6 @@
-from elasticsearch_dsl.update_by_query import UpdateByQuery
-from elasticsearch_dsl.search import Q
-from elasticsearch.helpers import bulk
+from elasticsearch7_dsl.update_by_query import UpdateByQuery
+from elasticsearch7_dsl.search import Q
+from elasticsearch7.helpers import bulk
 
 def test_update_by_query_no_script(write_client, setup_ubq_tests):
     index = setup_ubq_tests

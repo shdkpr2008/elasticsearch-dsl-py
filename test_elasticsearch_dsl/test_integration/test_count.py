@@ -1,4 +1,4 @@
-from elasticsearch_dsl.search import Search, Q
+from elasticsearch7_dsl.search import Search, Q
 
 
 def test_count_all(data_client):

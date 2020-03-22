@@ -1,7 +1,7 @@
 """
 Complex data model example modeling stackoverflow-like data.
 
-It is used to showcase several key features of elasticsearch-dsl:
+It is used to showcase several key features of elasticsearch7-dsl:
 
     * Object and Nested fields: see User and Comment classes and fields they
       are used in
@@ -24,7 +24,7 @@ It is used to showcase several key features of elasticsearch-dsl:
 """
 from datetime import datetime
 
-from elasticsearch_dsl import Document, Date, Text, Keyword, Boolean, InnerDoc, \
+from elasticsearch7_dsl import Document, Date, Text, Keyword, Boolean, InnerDoc, \
     Nested, Object, Join, Long, connections
 
 class User(InnerDoc):

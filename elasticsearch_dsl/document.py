@@ -5,7 +5,7 @@ except ImportError:
 
 from fnmatch import fnmatch
 
-from elasticsearch.exceptions import NotFoundError, RequestError
+from elasticsearch7.exceptions import NotFoundError, RequestError
 from six import add_metaclass, iteritems
 
 from .connections import get_connection
@@ -158,7 +158,7 @@ class Document(ObjectBase):
     @classmethod
     def search(cls, using=None, index=None):
         """
-        Create an :class:`~elasticsearch_dsl.Search` instance that will search
+        Create an :class:`~elasticsearch7_dsl.Search` instance that will search
         over this ``Document``.
         """
         return Search(
